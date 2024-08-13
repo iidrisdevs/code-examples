@@ -4,7 +4,7 @@ local module = {}
 local codes = {
 	-- put ur codes here example: 10visits = "10visits"
 	example = "one";
-	example2 = "two"'
+	example2 = "two";
 }
 
 function module:Redeem(code: string)
@@ -20,8 +20,8 @@ function module:Redeem(code: string)
 		return false
 	end
 
-	for index, value in pairs(codes) do
-		if codeFunction(index, value) then
+	for i,v in pairs(codes) do
+		if codeFunction(i,v) then
 			return
 		end
 	end
